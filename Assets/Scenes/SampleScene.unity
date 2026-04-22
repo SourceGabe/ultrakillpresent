@@ -226,7 +226,7 @@ Transform:
   m_GameObject: {fileID: 24459150}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.13, y: 0.8, z: 6.26348}
+  m_LocalPosition: {x: 18.39, y: 0.8, z: 6.26348}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -476,7 +476,7 @@ Transform:
   m_GameObject: {fileID: 123560656}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.08, y: 0.8, z: 2.57}
+  m_LocalPosition: {x: -21.69, y: 0.8, z: 2.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -681,6 +681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Gun
   projectile: {fileID: 1576499020700272516, guid: f5c908fae1bc74c81916eebccb828698, type: 3}
   launchPos: {fileID: 192318036}
+  playerPos: {fileID: 1836556909}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
