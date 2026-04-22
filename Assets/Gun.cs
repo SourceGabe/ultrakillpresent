@@ -7,6 +7,7 @@ public class Gun : MonoBehaviour
     LayerMask coinLayerMask;
     public GameObject projectile;
     public GameObject launchPos;
+    public GameObject playerPos;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -47,6 +48,7 @@ public class Gun : MonoBehaviour
         
     }
     private void Throw(){
-        Instantiate(projectile,launchPos.transform.position,transform.rotation);
+        Instantiate(projectile,launchPos.transform.position,playerPos.transform.rotation);
+       // Instantiate(projectile, launchPos.transform, false);
     }
 }

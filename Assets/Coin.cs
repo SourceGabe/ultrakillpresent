@@ -10,7 +10,7 @@ public class Coin : MonoBehaviour
     void Start()
     {
         enemies = GameObject.FindGameObjectsWithTag("enemy");
-        projectile.AddForce(transform.position * 5f,ForceMode.Impulse);
+        projectile.AddForce(GameObject.Find("Main Camera").GetComponent<Camera>().transform.forward * 15f,ForceMode.Impulse);
 
     }
 
@@ -34,6 +34,6 @@ public class Coin : MonoBehaviour
         closest.GetComponent<Enemy>().Shot();
         projectile.constraints = RigidbodyConstraints.FreezePosition;
         projectile.constraints = RigidbodyConstraints.FreezeRotation;
-        Destroy(this.gameObject,0.5f);
+        Destroy(this.gameObject,0.25f);
     }
 }

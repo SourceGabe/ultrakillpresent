@@ -17,6 +17,7 @@ public class Enemy : MonoBehaviour
            m_Material.color = Color.green; 
         }else{
             m_Material.color = Color.red;
+            Destroy(this.gameObject,0.5f);
         }  
     }
     public void Shot(){
